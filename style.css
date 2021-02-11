@@ -98,7 +98,6 @@ svg {
   color: white;
   border: none;
   cursor: pointer;
-  margin-top: 3rem;
 }
 
 select {
@@ -112,7 +111,8 @@ select {
 
 .tempo {
   margin: 3rem;
-  width: 30%;
+  margin: auto;
+  width: 90%;
 }
 .tempo-slider {
   padding: 0.2rem;
@@ -126,7 +126,6 @@ select {
 }
 .tempo p {
   font-size: 1.5rem;
-  margin: 2rem;
   text-align: center;
 }
 

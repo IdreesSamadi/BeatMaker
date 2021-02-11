@@ -11,8 +11,8 @@
       <div class="kick-track">
         <div class="controls">
           <h1>Kick</h1>
-          <button data-track="0" class="mute kick-volume">
-            <i class="fas fa-volume-mute"></i>
+          <button class="play playK">
+            <i class="fas fa-play"></i>
           </button>
           <select name="kick-select" id="kick-select">
             <option value="./allSounds/kick-classic.wav">Classic Kick</option>
@@ -22,21 +22,31 @@
           </select>
         </div>
         <div class="kick">
-          <div class="pad kick-pad b0"></div>
-          <div class="pad kick-pad b1"></div>
-          <div class="pad kick-pad b2"></div>
-          <div class="pad kick-pad b3"></div>
-          <div class="pad kick-pad b4"></div>
-          <div class="pad kick-pad b5"></div>
-          <div class="pad kick-pad b6"></div>
-          <div class="pad kick-pad b7"></div>
+          <div class="pad kick-pad kb0"></div>
+          <div class="pad kick-pad kb1"></div>
+          <div class="pad kick-pad kb2"></div>
+          <div class="pad kick-pad kb3"></div>
+          <div class="pad kick-pad kb4"></div>
+          <div class="pad kick-pad kb5"></div>
+          <div class="pad kick-pad kb6"></div>
+          <div class="pad kick-pad kb7"></div>
         </div>
+      </div>
+      <div class="tempo tempo-kick">
+        <input
+          type="range"
+          class="tempo-slider tempo-slider-kick"
+          max="300"
+          min="20"
+          value="150"
+        />
+        <p>Tempo: <span class="tempo-nr tempo-nr-kick">150</span></p>
       </div>
       <div class="snare-track">
         <div class="controls">
           <h1>Snare</h1>
-          <button data-track="1" class="mute snare-volume">
-            <i class="fas fa-volume-mute"></i>
+          <button class="play playS"><i class="fas fa-play"></i>
+
           </button>
           <select name="snare-select" id="snare-select">
             <option value="./allSounds/snare-acoustic01.wav">Classic Snare</option>
@@ -45,21 +55,31 @@
           </select>
         </div>
         <div class="snare">
-          <div class="pad snare-pad b0"></div>
-          <div class="pad snare-pad b1"></div>
-          <div class="pad snare-pad b2"></div>
-          <div class="pad snare-pad b3"></div>
-          <div class="pad snare-pad b4"></div>
-          <div class="pad snare-pad b5"></div>
-          <div class="pad snare-pad b6"></div>
-          <div class="pad snare-pad b7"></div>
+          <div class="pad snare-pad sb0"></div>
+          <div class="pad snare-pad sb1"></div>
+          <div class="pad snare-pad sb2"></div>
+          <div class="pad snare-pad sb3"></div>
+          <div class="pad snare-pad sb4"></div>
+          <div class="pad snare-pad sb5"></div>
+          <div class="pad snare-pad sb6"></div>
+          <div class="pad snare-pad sb7"></div>
         </div>
+      </div>
+      <div class="tempo tempo-snare">
+        <input
+          type="range"
+          class="tempo-slider tempo-slider-snare"
+          max="300"
+          min="20"
+          value="150"
+        />
+        <p>Tempo: <span class="tempo-nr tempo-nr-snare">150</span></p>
       </div>
       <div class="hihat-track">
         <div class="controls">
           <h1>Hihat</h1>
-          <button data-track="2" class="mute hihat-volume">
-            <i class="fas fa-volume-mute"></i>
+          <button class="play playH"><i class="fas fa-play"></i>
+
           </button>
           <select name="hihat-select" id="hihat-select">
             <option value="./allSounds/hihat-acoustic01.wav"
@@ -69,21 +89,31 @@
           </select>
         </div>
         <div class="hihat">
-          <div class="pad hihat-pad b0"></div>
-          <div class="pad hihat-pad b1"></div>
-          <div class="pad hihat-pad b2"></div>
-          <div class="pad hihat-pad b3"></div>
-          <div class="pad hihat-pad b4"></div>
-          <div class="pad hihat-pad b5"></div>
-          <div class="pad hihat-pad b6"></div>
-          <div class="pad hihat-pad b7"></div>
+          <div class="pad hihat-pad hb0"></div>
+          <div class="pad hihat-pad hb1"></div>
+          <div class="pad hihat-pad hb2"></div>
+          <div class="pad hihat-pad hb3"></div>
+          <div class="pad hihat-pad hb4"></div>
+          <div class="pad hihat-pad hb5"></div>
+          <div class="pad hihat-pad hb6"></div>
+          <div class="pad hihat-pad hb7"></div>
         </div>
+      </div>
+      <div class="tempo tempo-hihat">
+        <input
+          type="range"
+          class="tempo-slider tempo-slider-hihat"
+          max="300"
+          min="20"
+          value="150"
+        />
+        <p>Tempo: <span class="tempo-nr tempo-nr-hihat">150</span></p>
       </div>
       <div class="clap-track">
         <div class="controls">
           <h1>Clap</h1>
-          <button data-track="2" class="mute clap-volume">
-            <i class="fas fa-volume-mute"></i>
+          <button class="play playC"><i class="fas fa-play"></i>
+
           </button>
           <select name="clap-select" id="clap-select">
             <option value="./allSounds/clap-808.wav"
@@ -95,26 +125,25 @@
           </select>
         </div>
         <div class="clap">
-          <div class="pad clap-pad b0"></div>
-          <div class="pad clap-pad b1"></div>
-          <div class="pad clap-pad b2"></div>
-          <div class="pad clap-pad b3"></div>
-          <div class="pad clap-pad b4"></div>
-          <div class="pad clap-pad b5"></div>
-          <div class="pad clap-pad b6"></div>
-          <div class="pad clap-pad b7"></div>
+          <div class="pad clap-pad cb0"></div>
+          <div class="pad clap-pad cb1"></div>
+          <div class="pad clap-pad cb2"></div>
+          <div class="pad clap-pad cb3"></div>
+          <div class="pad clap-pad cb4"></div>
+          <div class="pad clap-pad cb5"></div>
+          <div class="pad clap-pad cb6"></div>
+          <div class="pad clap-pad cb7"></div>
         </div>
       </div>
-      <button class="play">Play</button>
-      <div class="tempo">
+      <div class="tempo tempo-clap">
         <input
           type="range"
-          class="tempo-slider"
+          class="tempo-slider tempo-slider-clap"
           max="300"
           min="20"
           value="150"
         />
-        <p>Tempo: <span class="tempo-nr">150</span></p>
+        <p>Tempo: <span class="tempo-nr tempo-nr-clap">150</span></p>
       </div>
     </div>
 
