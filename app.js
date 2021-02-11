@@ -247,13 +247,10 @@ drumKit.pads.forEach(pad => {
 drumKit.playBtnK.addEventListener("click", function() {
   if (!drumKit.isPlayingK) {
     drumKit.playBtnK.classList.add("active");
-    console.log(drumKit.playBtnK.classList)
     drumKit.playBtnK.innerHTML = '<i class="far fa-stop-circle"></i>';
   } else {
     drumKit.playBtnK.classList.remove("active");
-    console.log(drumKit.playBtnK.classList)
     drumKit.playBtnK.innerHTML = '<i class="fas fa-play"></i>';
-
   }  
   drumKit.startK();
 });
@@ -262,12 +259,9 @@ drumKit.playBtnS.addEventListener("click", function() {
   if (!drumKit.isPlayingS) {
     drumKit.playBtnS.innerHTML = '<i class="far fa-stop-circle"></i>';
     drumKit.playBtnS.classList.add("active");
-    console.log(drumKit.playBtnS.classList)
   } else {
-    // this.playBtn.innerText = "Play";
     drumKit.playBtnS.classList.remove("active");
     drumKit.playBtnS.innerHTML = '<i class="fas fa-play"></i>';
-
   }
   drumKit.startS();
 });
@@ -276,11 +270,9 @@ drumKit.playBtnH.addEventListener("click", function() {
   if (!drumKit.isPlayingH) {
     drumKit.playBtnH.innerHTML = '<i class="far fa-stop-circle"></i>';
     drumKit.playBtnH.classList.add("active");
-    console.log(drumKit.playBtnH.classList)
   } else {
     drumKit.playBtnH.innerHTML = '<i class="fas fa-play"></i>';
     drumKit.playBtnH.classList.remove("active");
-    console.log(drumKit.playBtnH.classList)
   }
   drumKit.startH();
 });
